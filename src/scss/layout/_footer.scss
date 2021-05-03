@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $fontText;
+  font-size: 14px;
+  color: #6b6b6b;
+  border-top: solid 1px #6b6b6b;
+  padding: 12px 47px 0 48px;
+}
+
+.footer__image {
+  width: 103px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
