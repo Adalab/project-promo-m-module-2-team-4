@@ -1,4 +1,6 @@
 .container1 {
+  display: flex;
+  flex-direction: column;
   height: 457px;
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   color: red;
@@ -11,6 +13,7 @@
   text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
+  margin-bottom: 20px;
   justify-content: space-evenly;
   align-items: center;
   color: #54585a;
@@ -19,20 +22,21 @@
   background: none;
 }
 
-/*.icon_trash:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
-  display: inline-block;
-  padding-right: 3px;
-  vertical-align: middle;
-  font-weight: 900;
-}*/
+.card {
+  width: 240;
+  height: 329;
+  background-color: white;
+  font-family: $fontCard;
+  box-shadow: blur 5, 5, 5, 5 rgba(0, 0, 0, 0.2);
+}
+
 .name {
   text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
 }
+
 .job:first-letter {
   text-transform: capitalize;
-}
-.card {
-  align-items: center;
+  font-size: 16px;
 }
