@@ -5,15 +5,34 @@
 }
 
 .button_reset {
+  display: flex;
   height: 30px;
   width: 75px;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
-  text-align: center;
-  color: red;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #54585a;
+  border: solid #ffffff 1px;
+  border-radius: 15px;
+  background: none;
 }
 
+/*.icon_trash:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}*/
+.name {
+  text-transform: capitalize;
+}
+.job:first-letter {
+  text-transform: capitalize;
+}
 .card {
-  color: red;
+  align-items: center;
 }
