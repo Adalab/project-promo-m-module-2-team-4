@@ -1,6 +1,7 @@
 .container1 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 457px;
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   color: red;
@@ -23,20 +24,45 @@
 }
 
 .card {
-  width: 240;
-  height: 329;
+  display: flexbox;
+  width: 240px;
+  height: 329px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.35);
+  text-align: left;
+  align-items: center;
   background-color: white;
+  line-height: 20px;
   font-family: $fontCard;
-  box-shadow: blur 5, 5, 5, 5 rgba(0, 0, 0, 0.2);
 }
 
 .name {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: bold;
+  color: $colorText;
+  padding-left: 20px;
 }
 
 .job:first-letter {
   text-transform: capitalize;
   font-size: 16px;
+  padding-left: 20px;
+}
+
+.bill {
+  padding-left: none;
+}
+
+.logos {
+  height: 32px;
+  width: 32px;
+  border: 2px #a2deaf;
+  border-radius: 30px;
+}
+.icon_github {
+  height: 32px;
+  width: 32px;
+  border: 2px #a2deaf;
+  border-radius: 30px;
 }
