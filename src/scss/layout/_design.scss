@@ -1,0 +1,86 @@
+.design-section {
+  border: solid 2px red;
+  width: 320px;
+  height: 340px;
+  padding: 27px 20px 31px;
+}
+.design {
+  display: flex;
+  margin-bottom: 25px;
+}
+.design-text {
+  margin-left: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: $fontText;
+}
+.icon-design {
+  color: $colorTitlte;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.colortext {
+  text-transform: uppercase;
+  font-family: $fontText;
+  font-size: 14px;
+  color: #54585a;
+}
+//paleta de colores
+.content-design {
+  margin-top: 6px;
+}
+.design__option-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px 20px 20px 0px;
+}
+.design__option-radio {
+  align-items: center;
+}
+
+.design__option-color {
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  margin: -2.5px;
+}
+
+.palette-1 {
+  padding-left: 10px;
+  .color-1 {
+    background-color: $colorText;
+  }
+  .color-2 {
+    background-color: $colorpalette2;
+  }
+  .color-3 {
+    background-color: $colorpalette3;
+  }
+}
+.palette-2 {
+  padding-left: 10px;
+  .color-4 {
+    background-color: $colorpalette4;
+  }
+  .color-5 {
+    background-color: $colorpalette5;
+  }
+  .color-6 {
+    background-color: $colorpalette6;
+  }
+}
+.palette-3 {
+  padding-left: 10px;
+  .color-7 {
+    background-color: $colorpalette7;
+  }
+  .color-8 {
+    background-color: $colorpalette8;
+  }
+  .color-9 {
+    background-color: $colorpalette9;
+  }
+}
