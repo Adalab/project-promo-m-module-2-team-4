@@ -1,20 +1,4 @@
-.section__intro {
-  display: inline;
-}
-&__icon {
-  width: 10px;
-  color: $colorTitle;
-}
-&__icon2 {
-  width: 3px;
-  height: 3px;
-}
-&__title {
-  font-family: "open-sans", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.form {
+.personal-data {
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +14,7 @@
 }
 .input {
   border: solid $colorpalette3;
-}
-&::placeholder {
-  color: #c5c5c5;
+  &::placeholder {
+    color: #c5c5c5;
+  }
 }
