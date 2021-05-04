@@ -1,0 +1,35 @@
+.section__intro {
+  display: inline;
+}
+&__icon {
+  width: 10px;
+  color: $colorTitle;
+}
+&__icon2 {
+  width: 3px;
+  height: 3px;
+}
+&__title {
+  font-family: "open-sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+.button {
+  background-color: $colorTitle;
+  color: white;
+  display: inline;
+}
+.label {
+  color: $colorText;
+  font-size: 14px;
+  line-height: 20px;
+}
+.input {
+  border: solid $colorpalette3;
+}
+&::placeholder {
+  color: #c5c5c5;
+}
