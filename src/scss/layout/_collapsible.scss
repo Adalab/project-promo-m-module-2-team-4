@@ -2,26 +2,21 @@
   // display: inline;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 27px 19px 30px 20px;
-  // border-bottom: solid 1px #d8d8d8;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 44px;
+  border-bottom: solid 1px #d8d8d8;
 
   &__icon {
-    width: 10px;
+    margin-right: 20px;
     color: $colorTitle;
-  }
-  // &__icon2 {
-  //   width: 3px;
-  //   height: 3px;
-  // }
-  &__arrow {
-    width: 3px;
-    height: 3px;
   }
   &__title {
     font-family: "open-sans", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
+    flex-grow: 1;
   }
 }
 // .collapsiblebox {
