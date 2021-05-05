@@ -62,20 +62,25 @@
 .bill {
   padding-left: none;
 }
+.card_bottom {
+  display: flex;
+  flex-direction: row;
+  line-height: 54px;
+  vertical-align: middle;
+}
 
 .logos {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 20px;
+  height: 32px;
+  width: 32px;
+  margin-left: 20px;
+  border: solid 2px #a2deaf;
+  border-radius: 30px;
+  margin-right: 10px;
 }
 
 .icon {
-  height: 32px;
-  width: 32px;
   color: #114e4e;
-  border: 2px #a2deaf;
-  border-radius: 30px;
-  margin-right: 10px;
-  background: none;
+  transform: translate(4px, -11px);
 }
