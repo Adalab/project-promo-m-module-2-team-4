@@ -10,7 +10,7 @@
     margin-bottom: 35px;
   }
   &__title {
-    color: $colorTitlte;
+    color: $colorTitle;
     font-family: $fontTitle;
     font-size: 20px;
   }
@@ -30,7 +30,7 @@
     flex-direction: row;
     width: 268px;
     height: 73.8px;
-    border: solid 1px $colorTitlte;
+    border: solid 1px $colorTitle;
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@
     text-align: center;
     width: 60px;
     &--icon {
-      color: $colorTitlte;
+      color: $colorTitle;
       font-size: 22px;
       padding-bottom: 5px;
     }
@@ -82,7 +82,7 @@
     &__section {
       width: 325px;
       height: 86px;
-      border: solid 2px $colorTitlte;
+      border: solid 2px $colorTitle;
       margin-bottom: 186px;
     }
   }
