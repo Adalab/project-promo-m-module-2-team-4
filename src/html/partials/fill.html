@@ -1,62 +1,68 @@
 <include src="./collapsible.html" title="rellena" icon="fa-keyboard"> </include>
 
-<fieldset class="personal-data">
-  <label for="name" class="label">Nombre completo</label>
-  <input
-    id="name"
-    type="text"
-    name="name"
-    placeholder="Ej: Sally Jill"
-    class="input"
-    required
-  />
-  <label for="position" class="label">Puesto</label>
-  <input
-    id="position"
-    type="text"
-    name="position"
-    placeholder="Ej: Front-end unicorn"
-    class="input"
-    required
-  />
-  <label for="button" class="label">Imagen de perfil</label>
-  <button id="button" class="button">
-    <a class="link" href=""></a>Añadir imagen
-  </button>
-  <div><img title="profile_image" src="" alt="" /></div>
-  <label for="email" class="label">Email</label>
-  <input
-    id="email"
-    type="email"
-    name="email"
-    placeholder="Ej: nombre.apellidos@mail.com"
-    class="input"
-    required
-  />
-  <label for="telephone" class="label">Teléfono</label>
-  <input
-    id="telephone"
-    type="tel"
-    name="telephone"
-    placeholder="Ej: 555-55-55-55"
-    class="input"
-    required
-  />
-  <label for="linkedIn" class="label">LinkedIn</label>
-  <input
-    id="linkedIn"
-    type="text"
-    name="linkedIn"
-    placeholder="linkedin.com/sally.jill"
-    class="input"
-    required
-  />
-  <label for="github" class="label">GitHub</label>
-  <input
-    id="github"
-    type="text"
-    name="github"
-    placeholder="@sally-jill"
-    class="input"
-  />
-</fieldset>
+<div class="marginform">
+  <fieldset class="personal-data">
+    <label for="name" class="label">Nombre completo</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Ej: Sally Jill"
+      class="input"
+      required
+    />
+    <label for="position" class="label">Puesto</label>
+    <input
+      id="position"
+      type="text"
+      name="position"
+      placeholder="Ej: Front-end unicorn"
+      class="input"
+      required
+    />
+    <label for="button" class="label">Imagen de perfil</label>
+    <div class="inline">
+      <button id="button" class="button">
+        <a class="link" href=""></a>Añadir imagen
+      </button>
+      <div class="previous_img">
+        <img title="profile_image" src="" alt="" />
+      </div>
+    </div>
+    <label for="email" class="label">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Ej: nombre.apellidos@mail.com"
+      class="input"
+      required
+    />
+    <label for="telephone" class="label">Teléfono</label>
+    <input
+      id="telephone"
+      type="tel"
+      name="telephone"
+      placeholder="Ej: 555-55-55-55"
+      class="input"
+      required
+    />
+    <label for="linkedIn" class="label">LinkedIn</label>
+    <input
+      id="linkedIn"
+      type="text"
+      name="linkedIn"
+      placeholder="linkedin.com/sally.jill"
+      class="input"
+      required
+    />
+    <label for="github" class="label">GitHub</label>
+    <input
+      id="github"
+      type="text"
+      name="github"
+      placeholder="@sally-jill"
+      class="input"
+    />
+  </fieldset>
+</div>
