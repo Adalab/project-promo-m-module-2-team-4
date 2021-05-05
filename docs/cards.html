@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="header">
+      <img class="header__image" src="./assets/images/logo-awesome-profile-cards.svg" alt="logotipo"
+      title="Awesome profile cards"></img>
+  </header>
+
+  <main>
+    <section class="section1">
+      <section class="container1">
+          <button class="button_reset" type="button">
+              <i class="fa fa-trash" aria-hidden="true"></i>reset
+          </button>
+          <div class="card">
+              <div class="name">bill murray</div>
+              <div class="job">front-end developer</div>
+              <img src="https://www.fillmurray.com/240/200" alt="Bill Murray" title="Bill Murray" class="bill"></img>
+              <div class="logos">
+                  <div class="icon">
+                      <i class="fa fa-mobile" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-github-alt" aria-hidden="true" id="icon"></i>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    </section>
+    <section class="section2">
+      <form class="form">
+        <!-- <div class="collapsible">
+    <div class="icon-design"><i class="far fa-object-ungroup"></i></div>
+    <div class="design-text">diseña</div>
+    <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
+</div> -->
+
+<div class="collapsiblebox">
+  <div class="collapsible">
+    <div class="collapsible__icon"><i class="far fa-object-ungroup"></i></div>
+    <div class="collapsible__title">diseña</div>
+    <div class="arrow">
+      <i class="fas fa-chevron-down collapsible__icon2"></i>
+    </div>
+  </div>
+  <div class="line"></div>
+</div>
+
+
+        <div class="marginform">
+          <h3 class="colortext">colores</h3>
+
+          <fieldset class="content-design">
+            <label class="design__option-label">
+              <input
+                type="radio"
+                name="palette"
+                class="design__option-radio"
+                value="1"
+                checked
+              />
+              <ul class="palette-1">
+                <li class="design__option-color color-1"></li>
+                <li class="design__option-color color-2"></li>
+                <li class="design__option-color color-3"></li>
+              </ul>
+            </label>
+            <label class="design__option-label">
+              <input
+                type="radio"
+                name="palette"
+                class="design__option-radio"
+                value="2"
+              />
+              <ul class="palette-2">
+                <li class="design__option-color color-4"></li>
+                <li class="design__option-color color-5"></li>
+                <li class="design__option-color color-6"></li>
+              </ul>
+            </label>
+            <label class="design__option-label">
+              <input
+                type="radio"
+                name="palette"
+                class="design__option-radio"
+                value="3"
+              />
+              <ul class="palette-3">
+                <li class="design__option-color color-7"></li>
+                <li class="design__option-color color-8"></li>
+                <li class="design__option-color color-9"></li>
+              </ul>
+            </label>
+          </fieldset>
+        </div>
+
+        <!-- <div class="collapsible">
+    <div class="icon-design"><i class="far fa-keyboard"></i></div>
+    <div class="design-text">rellena</div>
+    <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
+</div> -->
+
+<div class="collapsiblebox">
+  <div class="collapsible">
+    <div class="collapsible__icon"><i class="far fa-keyboard"></i></div>
+    <div class="collapsible__title">rellena</div>
+    <div class="arrow">
+      <i class="fas fa-chevron-down collapsible__icon2"></i>
+    </div>
+  </div>
+  <div class="line"></div>
+</div>
+
+
+        <div class="marginform">
+          <fieldset class="personal-data">
+            <label for="name" class="label">Nombre completo</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ej: Sally Jill"
+              class="input"
+              required
+            />
+            <label for="position" class="label">Puesto</label>
+            <input
+              id="position"
+              type="text"
+              name="position"
+              placeholder="Ej: Front-end unicorn"
+              class="input"
+              required
+            />
+            <label for="button" class="label">Imagen de perfil</label>
+            <div class="inline">
+              <button id="button" class="button">
+                <a class="link" href=""></a>Añadir imagen
+              </button>
+              <div class="previous_img">
+                <img title="profile_image" src="" alt="" />
+              </div>
+            </div>
+            <label for="email" class="label">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ej: nombre.apellidos@mail.com"
+              class="input"
+              required
+            />
+            <label for="telephone" class="label">Teléfono</label>
+            <input
+              id="telephone"
+              type="tel"
+              name="telephone"
+              placeholder="Ej: 555-55-55-55"
+              class="input"
+              required
+            />
+            <label for="linkedIn" class="label">LinkedIn</label>
+            <input
+              id="linkedIn"
+              type="text"
+              name="linkedIn"
+              placeholder="linkedin.com/sally.jill"
+              class="input"
+              required
+            />
+            <label for="github" class="label">GitHub</label>
+            <input
+              id="github"
+              type="text"
+              name="github"
+              placeholder="@sally-jill"
+              class="input"
+            />
+          </fieldset>
+        </div>
+
+        <!-- <div class="collapsible">
+    <div class="icon-design"><i class="far fas fa-share-alt"></i></div>
+    <div class="design-text">comparte</div>
+    <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
+</div> -->
+
+<div class="collapsiblebox">
+  <div class="collapsible">
+    <div class="collapsible__icon"><i class="far fas fa-share-alt"></i></div>
+    <div class="collapsible__title">comparte</div>
+    <div class="arrow">
+      <i class="fas fa-chevron-down collapsible__icon2"></i>
+    </div>
+  </div>
+  <div class="line"></div>
+</div>
+
+
+        <div class="marginform">
+          <fieldset class="share_form">
+            <container class="container_share">
+              <button class="share_button" type="button">
+                <a class="share__button--link" title="crea tarjeta"
+                  ><i class="far fa-address-card"></i>Crear Tarjeta</a
+                >
+              </button>
+            </container>
+          </fieldset>
+        </div>
+
+      </form>
+
+    </section>
+  </main>
+
+  <footer class= "footer">
+      <small>Awesome profile-cards &copy;2018 logo adalab</small>
+
+      <img class="footer__image" src="./assets/images/logo-adalab.png" alt="logo adalab"
+      title="Logo de Adalab"></img>
+  </footer>
+
+</body>
+
+</html>
