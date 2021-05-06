@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   padding: 30px 79px 30px 40px;
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 
 .header__image {

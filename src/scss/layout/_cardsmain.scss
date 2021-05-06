@@ -1,0 +1,28 @@
+@media all and (min-width: 768px) {
+  .cards_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 852px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 23px;
+    background-image: linear-gradient(#f5f5f5, #ffffff);
+  }
+  .section1 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 812px;
+    border-radius: 10px;
+  }
+  .section2 {
+    width: 50%;
+    padding-right: 30px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .section1 {
+    width: 585px;
+  }
+}

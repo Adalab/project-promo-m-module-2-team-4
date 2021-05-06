@@ -21,7 +21,7 @@
 .input {
   height: 30px;
   padding-left: 9px;
-  border: solid $colorpalette3;
+  border: solid $colorpalette3 1px;
   &::placeholder {
     color: #c5c5c5;
   }
