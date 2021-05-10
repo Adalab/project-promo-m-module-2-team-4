@@ -1,11 +1,13 @@
 'use strict'
 
+const form =document.querySelector('.js-form')
 
 const card={
     line:document.querySelector(".rectangle"),
     title:document.querySelector(".name"),
     border:document.querySelector(".icon"),
     icon:document.querySelector(".iconcolor"),
+    job: document.querySelector('.job'),
 }
 
 const data={
@@ -18,8 +20,17 @@ const data={
     github:document.querySelector("#github")
 }
 function changeTitle(){
-    const titleValue = name.value;
-    card.title.innerHTML= titleValue;
+    const titleValue = data.fullName.value;
+    const positionValue = data.position.value;
+    // const titleValue = data.fullName.value;
+    // const titleValue = data.fullName.value;
+    // const titleValue = data.fullName.value;
+    // const titleValue = data.fullName.value;
+    // const titleValue = data.fullName.value;
 
+
+    card.title.innerHTML= titleValue;
+    card.job.innerHTML= positionValue;
 }
-data.fullName.addEventListener('keyup', changeTitle);
+ 
+form.addEventListener('keyup', changeTitle);
