@@ -9,6 +9,8 @@ const contentDesign=document.querySelector(".js-design");
 const contentFill=document.querySelector(".js-fill");
 const contentShare=document.querySelector(".js-share");
 
+const arrow1
+
 contentFill.classList.add('hidden');
 contentShare.classList.add('hidden');
 
