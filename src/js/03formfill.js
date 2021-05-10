@@ -1,5 +1,13 @@
 'use strict'
 
+
+const card={
+    line:document.querySelector(".rectangle"),
+    title:document.querySelector(".name"),
+    border:document.querySelector(".icon"),
+    icon:document.querySelector(".iconcolor"),
+}
+
 const data={
     fullName:document.querySelector("#name"),
     position:document.querySelector('#position'),
