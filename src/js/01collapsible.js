@@ -46,8 +46,9 @@ function showDesign (){
         contentFill.classList.add('hidden');
         contentShare.classList.add('hidden');
         contentDesign.classList.remove('hidden');
-        arrowDesign.classList.remove('arrowhidden');
+        arrowFill.classList.add('arrowhidden');
         arrowShare.classList.add('arrowhidden');
+        arrowDesign.classList.remove('arrowhidden');
 
     }
 }
