@@ -15,23 +15,29 @@ const arrowShare=document.querySelector(".js-arrowS");
 
 contentFill.classList.add('hidden');
 contentShare.classList.add('hidden');
+arrowFill.classList.remove('collapsible__icon2');
+arrowShare.classList.remove('collapsible__icon2');
+arrowFill.classList.add('arrowhidden');
+arrowShare.classList.add('arrowhidden');
+console.log(arrowShare)
+
 
 
 function hiddenDesign(){
 contentDesign.classList.add('hidden');
-arrowDesign.classList.add('arrowhidden');
-arrowDesign.classList.remove('arrow');
+//arrowDesign.classList.add('arrowhidden');
 
 }
 function hiddenFill (){
     contentFill.classList.remove('hidden');
     arrowFill.classList.remove('arrowhidden');
-    arrowFill.classList.add('arrow');
+    arrowFill.classList.add('collapsible__icon2');
+
 }
 function hiddenShare (){
     contentShare.classList.remove('hidden');
     arrowShare.classList.remove('arrowhidden');
-    arrowShare.classList.add('arrow');
+    arrowShare.classList.add('collapsible__icon2');
 }
 
 function showDesign (){
@@ -40,7 +46,8 @@ function showDesign (){
         contentFill.classList.add('hidden');
         contentShare.classList.add('hidden');
         contentDesign.classList.remove('hidden');
-        arrowDesign.classList.add('arrowhidden');
+        arrowDesign.classList.remove('arrowhidden');
+        arrowShare.classList.add('arrowhidden');
 
     }
 }
@@ -50,7 +57,8 @@ function showFill (){
     if (contentFill.classList.contains('js-fill')){
         contentDesign.classList.add('hidden');
         contentShare.classList.add('hidden');
-        arrowFill.classList.add('arrowhidden');
+        arrowDesign.classList.add('arrowhidden');
+        arrowShare.classList.add('arrowhidden');
     }
 }
 
@@ -59,7 +67,8 @@ function showShare (){
     if (contentShare.classList.contains('js-share')){
         contentDesign.classList.add('hidden');
         contentFill.classList.add('hidden');
-        arrowShare.classList.add('arrowhidden');
+        arrowDesign.classList.add('arrowhidden');
+        arrowFill.classList.add('arrowhidden');
     }
 }
 
