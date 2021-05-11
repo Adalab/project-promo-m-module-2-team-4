@@ -5,7 +5,7 @@ const form =document.querySelector('.js-form')
 const card={
     line:document.querySelector(".rectangle"),
     title:document.querySelector(".name"),
-    border:document.querySelector(".icon"),
+    border:document.querySelectorAll(".icon"),
     icon:document.querySelector(".iconcolor"),
     job: document.querySelector('.job'),
 }
