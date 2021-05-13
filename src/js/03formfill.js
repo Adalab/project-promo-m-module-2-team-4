@@ -19,7 +19,9 @@ const data={
     linkedin:document.querySelector("#linkedIn"),
     github:document.querySelector("#github")
 }
+
 function changeTitle(){
+
     const titleValue = data.fullName.value;
     const positionValue = data.position.value;
     // const titleValue = data.fullName.value;
@@ -28,7 +30,7 @@ function changeTitle(){
     // const titleValue = data.fullName.value;
     // const titleValue = data.fullName.value;
 
-
+    
     card.title.innerHTML= titleValue;
     card.job.innerHTML= positionValue;
 }
