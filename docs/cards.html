@@ -20,8 +20,9 @@
 <body>
 
   <header class="header">
+      <a href="index.html">
       <img class="header__image" src="./assets/images/logo-awesome-profile-cards.svg" alt="logotipo"
-      title="Awesome profile cards"></img>
+      title="Awesome profile cards"></img></a>
   </header>
 
   <main class="cards_main">
@@ -31,78 +32,68 @@
               <i class="fa fa-trash" aria-hidden="true"></i>reset
           </button>
           <div class="card">
-              <div class="name_job">
-                  <div class="name">bill murray</div>
-                  <div class="job">front-end developer</div>
+              <div class="card_header">
+                  <div class="rectangle"></div>
+                  <div class="name_job">
+                      <div class="name">bill murray</div>
+                      <div class="job">front-end developer</div>
+                  </div>
               </div>
               <div class="card_image"></div>
               <div class="logos">
-                  <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                  <div class="icon"><i class="far fa-envelope"></i></div>
-                  <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-                  <div class="icon"><i class="fab fa-github-alt"></i></div>
+                  <div class="icon"><a href="tel:555555555" class="link1"><i class="fas fa-mobile-alt iconcolor"></i></a>
+                  </div>
+                  <div class="icon"><a href="mailto:kate.quillen@gmail.com" class="link1"><i
+                              class="far fa-envelope iconcolor"></i></a></div>
+                  <div class="icon"><a href="https://www.imdb.com/name/nm0000195/" class="link1"><i
+                              class="fab fa-linkedin-in iconcolor"></i></a></div>
+                  <div class="icon"><a href="https://github.com/Adalab/project-promo-m-module-2-team-4" class="link1"><i
+                              class="fab fa-github-alt iconcolor"></i></a></div>
               </div>
           </div>
       </section>
     </section>
     <section class="section2">
-      <form class="form">
+      <form class="js-form form">
         <!-- <div class="collapsible">
     <div class="icon-design"><i class="far fa-object-ungroup"></i></div>
     <div class="design-text">diseña</div>
     <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
 </div> -->
 
-<div class="collapsiblebox">
+<div class="collapsiblebox js-cdesign">
   <div class="collapsible">
     <div class="collapsible__icon"><i class="far fa-object-ungroup"></i></div>
     <div class="collapsible__title">diseña</div>
     <div class="arrow">
-      <i class="fas fa-chevron-down collapsible__icon2"></i>
+      <i class="fas fa-chevron-down collapsible__icon2 js-arrowD"></i>
     </div>
   </div>
   <div class="line"></div>
 </div>
 
-
-        <div class="marginform">
+        <div class="js-design marginform">
           <h3 class="colortext">colores</h3>
 
-          <fieldset class="content-design">
-            <label class="design__option-label">
-              <input
-                type="radio"
-                name="palette"
-                class="design__option-radio"
-                value="1"
-                checked
-              />
+          <fieldset class="design">
+            <label class="design__option-label label1">
+              <input type="radio" name="palette" class="design__option-radio" value="1" checked id="blue" />
               <ul class="palette-1">
                 <li class="design__option-color color-1"></li>
                 <li class="design__option-color color-2"></li>
                 <li class="design__option-color color-3"></li>
               </ul>
             </label>
-            <label class="design__option-label">
-              <input
-                type="radio"
-                name="palette"
-                class="design__option-radio"
-                value="2"
-              />
+            <label class="design__option-label label2">
+              <input type="radio" name="palette" class="design__option-radio" value="2" id="red" />
               <ul class="palette-2">
                 <li class="design__option-color color-4"></li>
                 <li class="design__option-color color-5"></li>
                 <li class="design__option-color color-6"></li>
               </ul>
             </label>
-            <label class="design__option-label">
-              <input
-                type="radio"
-                name="palette"
-                class="design__option-radio"
-                value="3"
-              />
+            <label class="design__option-label label3">
+              <input type="radio" name="palette" class="design__option-radio" value="3" id="yellow" />
               <ul class="palette-3">
                 <li class="design__option-color color-7"></li>
                 <li class="design__option-color color-8"></li>
@@ -111,45 +102,29 @@
             </label>
           </fieldset>
         </div>
-
         <!-- <div class="collapsible">
     <div class="icon-design"><i class="far fa-keyboard"></i></div>
     <div class="design-text">rellena</div>
     <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
 </div> -->
 
-<div class="collapsiblebox">
+<div class="collapsiblebox js-cfill">
   <div class="collapsible">
     <div class="collapsible__icon"><i class="far fa-keyboard"></i></div>
     <div class="collapsible__title">rellena</div>
     <div class="arrow">
-      <i class="fas fa-chevron-down collapsible__icon2"></i>
+      <i class="fas fa-chevron-down collapsible__icon2 js-arrowF"></i>
     </div>
   </div>
   <div class="line"></div>
 </div>
 
-
         <div class="marginform">
-          <fieldset class="personal-data">
+          <fieldset class="js-fill personal-data">
             <label for="name" class="label">Nombre completo</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Ej: Sally Jill"
-              class="input"
-              required
-            />
+            <input id="name" type="text" name="name" placeholder="Ej: Sally Jill" class="input" required />
             <label for="position" class="label">Puesto</label>
-            <input
-              id="position"
-              type="text"
-              name="position"
-              placeholder="Ej: Front-end unicorn"
-              class="input"
-              required
-            />
+            <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn" class="input" required />
             <label for="button" class="label">Imagen de perfil</label>
             <div class="inline">
               <button id="button" class="button">
@@ -160,73 +135,39 @@
               </div>
             </div>
             <label for="email" class="label">Email</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Ej: nombre.apellidos@mail.com"
-              class="input"
-              required
-            />
+            <input id="email" type="email" name="email" placeholder="Ej: nombre.apellidos@mail.com" class="input" required />
             <label for="telephone" class="label">Teléfono</label>
-            <input
-              id="telephone"
-              type="tel"
-              name="telephone"
-              placeholder="Ej: 555-55-55-55"
-              class="input"
-              required
-            />
+            <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" class="input" required />
             <label for="linkedIn" class="label">LinkedIn</label>
-            <input
-              id="linkedIn"
-              type="text"
-              name="linkedIn"
-              placeholder="linkedin.com/sally.jill"
-              class="input"
-              required
-            />
+            <input id="linkedIn" type="text" name="linkedIn" placeholder="linkedin.com/sally.jill" class="input" required />
             <label for="github" class="label">GitHub</label>
-            <input
-              id="github"
-              type="text"
-              name="github"
-              placeholder="@sally-jill"
-              class="input"
-            />
+            <input id="github" type="text" name="github" placeholder="@sally-jill" class="input" />
           </fieldset>
         </div>
-
         <!-- <div class="collapsible">
     <div class="icon-design"><i class="far fas fa-share-alt"></i></div>
     <div class="design-text">comparte</div>
     <div class="arrow"><i class="fas fa-chevron-down section__icon2"></i></div>
 </div> -->
 
-<div class="collapsiblebox">
+<div class="collapsiblebox js-cshare">
   <div class="collapsible">
     <div class="collapsible__icon"><i class="far fas fa-share-alt"></i></div>
     <div class="collapsible__title">comparte</div>
     <div class="arrow">
-      <i class="fas fa-chevron-down collapsible__icon2"></i>
+      <i class="fas fa-chevron-down collapsible__icon2 js-arrowS"></i>
     </div>
   </div>
   <div class="line"></div>
 </div>
 
-
-        <div class="marginform">
-          <fieldset class="share_form">
-            <container class="container_share">
-              <button class="share_button" type="button">
-                <a class="share__button--link" title="crea tarjeta"
-                  ><i class="far fa-address-card"></i>Crear Tarjeta</a
-                >
-              </button>
-            </container>
-          </fieldset>
-        </div>
-
+        <fieldset class="js-share share_form">
+          <container class="container__share">
+            <button class="container__share--button" type="button">
+              <a class="share__button--link" title="crea tarjeta"><i class="far fa-address-card"></i>Crear Tarjeta</a>
+            </button>
+          </container>
+        </fieldset>
       </form>
 
     </section>
@@ -238,7 +179,7 @@
       <img class="footer__image" src="./assets/images/logo-adalab.png" alt="logo adalab"
       title="Logo de Adalab"></img>
   </footer>
-
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
