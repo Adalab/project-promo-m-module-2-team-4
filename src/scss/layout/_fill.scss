@@ -3,11 +3,15 @@
   flex-direction: column;
 }
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $colorTitle;
   color: white;
-  // display: inline-block;
   width: 140px;
   height: 30px;
+  font-family: $fontText;
+  font-size: 14px;
   border: none;
   border-radius: 3px;
 }
@@ -36,4 +40,8 @@
 }
 .inline {
   display: flex;
+}
+
+.action__hiddenField {
+  display: none;
 }

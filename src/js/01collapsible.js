@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
 //collapsible
-const cdesign=document.querySelector(".js-cdesign");
+const cdesign=document.querySelector('.js-cdesign');
 const cfill=document.querySelector(".js-cfill");
 const cshare=document.querySelector(".js-cshare");
 
@@ -12,6 +12,7 @@ const contentShare=document.querySelector(".js-share");
 const arrowDesign=document.querySelector(".js-arrowD");
 const arrowFill=document.querySelector(".js-arrowF");
 const arrowShare=document.querySelector(".js-arrowS");
+console.log(arrowShare);
 
 contentFill.classList.add('hidden');
 contentShare.classList.add('hidden');
@@ -19,7 +20,7 @@ arrowFill.classList.remove('collapsible__icon2');
 arrowShare.classList.remove('collapsible__icon2');
 arrowFill.classList.add('arrowhidden');
 arrowShare.classList.add('arrowhidden');
-console.log(arrowShare)
+console.log(arrowShare);
 
 
 
