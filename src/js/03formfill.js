@@ -1,38 +1,39 @@
-'use strict'
+"use strict";
 
-const form =document.querySelector('.js-form')
+const form = document.querySelector(".js-form");
+const reset = document.querySelector(".button_reset");
 
-const card={
-    line:document.querySelector(".rectangle"),
-    title:document.querySelector(".name"),
-    border:document.querySelectorAll(".icon"),
-    icon:document.querySelector(".iconcolor"),
-    job: document.querySelector('.job'),
+const card = {
+  line: document.querySelector(".rectangle"),
+  title: document.querySelector(".name"),
+  border: document.querySelectorAll(".icon"),
+  icon: document.querySelectorAll(".iconcolor"),
+  job: document.querySelector(".job"),
+  phone: document.querySelector(".js-phone"),
+  email: document.querySelector(".js-email"),
+  linkedin: document.querySelector(".js-linkedin"),
+  github: document.querySelector(".js-github"),
+};
+
+function changeTitle(ev) {
+  const inputForm = ev.target.name;
+  const inputValue = ev.target.value;
+  data[inputForm] = inputValue;
 }
 
-const data={
-    fullName:document.querySelector("#name"),
-    position:document.querySelector('#position'),
-    image:document.querySelector('.label'),
-    email:document.querySelector("#email"),
-    phone:document.querySelector("#telephone"),
-    linkedin:document.querySelector("#linkedIn"),
-    github:document.querySelector("#github")
+function inputChange() {
+  card.title.innerHTML =
+    data.fullName === "" ? "Nombre y Apellidos" : data.fullName;
+  card.job.innerHTML = data.position === "" ? "Puesto" : data.position;
+  card.email.href = `mailto: ${data.email}`;
+  card.phone.href = `tel: ${data.phone}`;
+  card.linkedin.href = `https://linkedin/${data.linkedin}`;
+  card.github.href = `https://github.com/${data.github}`;
 }
 
-function changeTitle(){
-
-    const titleValue = data.fullName.value;
-    const positionValue = data.position.value;
-    // const titleValue = data.fullName.value;
-    // const titleValue = data.fullName.value;
-    // const titleValue = data.fullName.value;
-    // const titleValue = data.fullName.value;
-    // const titleValue = data.fullName.value;
-
-    
-    card.title.innerHTML= titleValue;
-    card.job.innerHTML= positionValue;
+function handlerKey(ev) {
+  changeTitle(ev);
+  inputChange();
 }
- 
-form.addEventListener('keyup', changeTitle);
+
+form.addEventListener("keyup", handlerKey);
