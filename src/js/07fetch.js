@@ -40,22 +40,20 @@ function handlerClickCreate(event) {
       .then((response) => response.json())
       .then((data) => {
         if (data.success === false) {
-          responseElement.innerHTML = "Te falta algun dato ;)";
+          responseElement.innerHTML =
+            "<p>Tienes que rellenar algunos datos.</p>";
           responseElement.classList.remove("hidden");
         } else {
-          /*responseElement.innerHTML = "La tarjeta ha sido creada!" + */
-          const newElement = document.createElement("p");
-          const newContent = document.createTextNode(
-            "La tarjeta ha sido creada"
-          );
-          newElement.appendChild(newContent);
-          responseElement.appendChild(newElement);
-
-          const newLink = document.createElement("a");
-          newLink.href = `${data.cardURL}`;
-          responseElement.appendChild(newLink);
+          responseElement.innerHTML = `
+            <h3>La tarjeta ha sido creada:</h3>
+            <p><a href="${data.cardURL}">${data.cardURL}</a></p>`;
+          responseElement.classList.remove("hidden");
           btnTwitter.classList.remove("hidden");
         }
+      })
+      .catch(() => {
+        responseElement.innerHTML = `<p class="error">Hemos apagado el servidor un rato. Inténtalo más tarde.</p>`;
+        responseElement.classList.remove("hidden");
       });
   }
 }

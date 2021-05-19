@@ -108,7 +108,7 @@ const form = document.querySelector(".js-form"),
     job: document.querySelector(".job"),
   },
   data = {
-    fullName: document.querySelector("#name"),
+    name: document.querySelector("#name"),
     position: document.querySelector("#position"),
     : document.querySelector(".label"),
     email: document.querySelector("#email"),
@@ -117,7 +117,7 @@ const form = document.querySelector(".js-form"),
     github: document.querySelector("#github"),
   };
 function changeTitle() {
-  const e = data.fullName.value,
+  const e = data.name.value,
     o = data.position.value;
   (card.title.innerHTML = e), (card.job.innerHTML = o);
 }

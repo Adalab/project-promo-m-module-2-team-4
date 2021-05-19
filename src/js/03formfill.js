@@ -22,9 +22,8 @@ function changeTitle(ev) {
 }
 
 function inputChange() {
-  card.title.innerHTML =
-    data.fullName === "" ? "Nombre y Apellidos" : data.fullName;
-  card.job.innerHTML = data.position === "" ? "Puesto" : data.position;
+  card.title.innerHTML = data.name === "" ? "Nombre y Apellidos" : data.name;
+  card.job.innerHTML = data.job === "" ? "Puesto" : data.job;
   card.email.href = `mailto: ${data.email}`;
   card.phone.href = `tel: ${data.phone}`;
   card.linkedin.href =

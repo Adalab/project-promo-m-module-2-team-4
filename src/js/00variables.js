@@ -1,9 +1,9 @@
 "use strict";
 
 const data = {
-  fullName: "",
-  position: "",
-  image: "",
+  name: "",
+  job: "",
+  photo: "",
   email: "",
   phone: "",
   linkedin: "",
