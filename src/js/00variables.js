@@ -8,5 +8,5 @@ const data = {
   phone: "",
   linkedin: "",
   github: "",
-  pallete: "",
+  palette: "",
 };

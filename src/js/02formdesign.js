@@ -8,7 +8,7 @@ const label1 = document.querySelector(".label1");
 const label2 = document.querySelector(".label2");
 const label3 = document.querySelector(".label3");
 
-function labelPallete1() {
+function labelpalette1() {
   //line
   card.line.classList.add("js-color2");
   card.line.classList.remove("js-color5", "js-color8");
@@ -26,9 +26,9 @@ function labelPallete1() {
     iconcolor.classList.remove("js-color4", "js-color7")
   );
 
-  data.pallete = "1";
+  data.palette = "1";
 }
-function labelPallete2() {
+function labelpalette2() {
   //line
   card.line.classList.add("js-color5");
   card.line.classList.remove("js-color2", "js-color8");
@@ -46,9 +46,9 @@ function labelPallete2() {
     iconcolor.classList.remove("js-color1", "js-color7")
   );
 
-  data.pallete = "2";
+  data.palette = "2";
 }
-function labelPallete3() {
+function labelpalette3() {
   //line
   card.line.classList.add("js-color8");
   card.line.classList.remove("js-color2", "js-color5");
@@ -66,11 +66,11 @@ function labelPallete3() {
     iconcolor.classList.remove("js-color1", "js-color4")
   );
 
-  data.pallete = "3";
+  data.palette = "3";
 }
 
-label2.addEventListener("change", labelPallete2);
+label2.addEventListener("change", labelpalette2);
 
-label1.addEventListener("change", labelPallete1);
+label1.addEventListener("change", labelpalette1);
 
-label3.addEventListener("change", labelPallete3);
+label3.addEventListener("change", labelpalette3);

@@ -27,7 +27,11 @@ function inputChange() {
   card.job.innerHTML = data.position === "" ? "Puesto" : data.position;
   card.email.href = `mailto: ${data.email}`;
   card.phone.href = `tel: ${data.phone}`;
-  card.linkedin.href = `https://linkedin/${data.linkedin}`;
+  card.linkedin.href =
+    data.linkedin.href === ""
+      ? data.linkedin.setAttribute("disabled", true)
+      : `https://linkedin.com/in/${data.linkedin}`;
+
   card.github.href = `https://github.com/${data.github}`;
 }
 
