@@ -110,7 +110,7 @@ const form = document.querySelector(".js-form"),
   data = {
     fullName: document.querySelector("#name"),
     position: document.querySelector("#position"),
-    image: document.querySelector(".label"),
+    : document.querySelector(".label"),
     email: document.querySelector("#email"),
     phone: document.querySelector("#telephone"),
     linkedin: document.querySelector("#linkedIn"),

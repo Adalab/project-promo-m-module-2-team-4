@@ -4,19 +4,17 @@ const btnTwitter = document.querySelector(".js-twitter");
 
 function handlerClickCreate(event) {
   event.preventDefault();
-  if (data.fullName === "") {
+  if (data.name === "") {
     responseElement.innerHTML = "Oops! Tienes que rellenar tu nombre!";
     responseElement.classList.remove("hidden");
-  } else if (data.position === "") {
+  } else if (data.job === "") {
     responseElement.innerHTML =
       "Oops! Tienes que rellenar tu puesto de trabajo!";
     responseElement.classList.remove("hidden");
-  }
-  // else if (data.image === "") {
-  //   responseElement.innerHTML = "Oops! Tienes que subir tu foto!";
-  //   responseElement.classList.remove("hidden");
-  // }
-  else if (data.email === "") {
+  } else if (data.photo === "") {
+    responseElement.innerHTML = "Oops! Tienes que subir tu foto!";
+    responseElement.classList.remove("hidden");
+  } else if (data.email === "") {
     responseElement.innerHTML = "Oops! Tienes que rellenar tu email!";
     responseElement.classList.remove("hidden");
   } else if (data.phone === "") {
@@ -31,9 +29,12 @@ function handlerClickCreate(event) {
       "Oops! Tienes que rellenar tu usuario de GitHub!";
     responseElement.classList.remove("hidden");
   } else {
+    console.log(data);
     fetch("https://awesome-profile-cards.herokuapp.com/card", {
       method: "POST",
-      mode: "cors",
+      headers: {
+        "content-type": "application/json",
+      },
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
