@@ -104,16 +104,25 @@
     margin-left: 5px;
     margin-right: 5px;
     width: 90px;
-    background-color: #bbbabb;
+    background: linear-gradient(
+      90deg,
+      rgba(100, 183, 120, 1) 19%,
+      rgba(157, 184, 163, 1) 63%,
+      rgba(184, 184, 184, 1) 100%
+    );
     height: 50px;
     border-radius: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     animation-name: rectangle;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
+    animation-direction: alternate;
+    // transition-property: background;
+    // transition-duration: 3s;
+    // transition-timing-function: linear;
   }
   &__circle {
     display: flex;
@@ -125,29 +134,23 @@
     background-color: white;
     border-radius: 50%;
     animation-name: circle;
-    // animation-delay: 3s;
-    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-duration: 4s;
 
     &--hojas {
       width: 30px;
       height: 30px;
       animation-name: hojas;
-      animation-duration: 6s;
+      animation-duration: 20s;
       animation-fill-mode: forwards;
+      animation-delay: 1s;
     }
   }
 }
 
 @keyframes rectangle {
   0% {
-    background-color: #64b778;
   }
-  // 25% {
-  //   background-color: #64b778;
-  // }
-  // 50% {
-  //   background-color: #64b778;
-  // }
   100% {
     width: 50px;
     background-color: #64b778;
