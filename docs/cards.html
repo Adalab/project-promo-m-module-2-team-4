@@ -28,29 +28,33 @@
   <main class="cards_main">
     <section class="section1">
       <section class="container1">
-          <button class="button_reset" type="button">
-              <i class="fa fa-trash" aria-hidden="true"></i>reset
-          </button>
-          <div class="card">
-              <div class="card_header">
-                  <div class="rectangle"></div>
-                  <div class="name_job">
-                      <div class="name">bill murray</div>
-                      <div class="job">front-end developer</div>
-                  </div>
-              </div>
-              <div class="card_image"></div>
-              <div class="logos">
-                  <div class="icon"><a href="tel:555555555" class="link1"><i class="fas fa-mobile-alt iconcolor"></i></a>
-                  </div>
-                  <div class="icon"><a href="mailto:kate.quillen@gmail.com" class="link1"><i
-                              class="far fa-envelope iconcolor"></i></a></div>
-                  <div class="icon"><a href="https://www.imdb.com/name/nm0000195/" class="link1"><i
-                              class="fab fa-linkedin-in iconcolor"></i></a></div>
-                  <div class="icon"><a href="https://github.com/Adalab/project-promo-m-module-2-team-4" class="link1"><i
-                              class="fab fa-github-alt iconcolor"></i></a></div>
-              </div>
+        <button class="button_reset" type="reset">
+          <i class="fa fa-trash" aria-hidden="true"></i>reset
+        </button>
+        <div class="card">
+          <div class="card_header">
+            <div class="rectangle"></div>
+            <div class="name_job">
+              <div class="name">Mileva Marić</div>
+              <div class="job">Matemática</div>
+            </div>
           </div>
+          <div class="card_image js__profile-preview"></div>
+          <div class="logos">
+            <div class="icon">
+              <a href="tel:" class="link1 js-phone" target="_blank"><i class="fas fa-mobile-alt iconcolor"></i></a>
+            </div>
+            <div class="icon">
+              <a href="mailto:" class="link1 js-email" target="_blank"><i class="far fa-envelope iconcolor"></i></a>
+            </div>
+            <div class="icon">
+              <a href="" class="link1 js-linkedin" target="_blank"><i class="fab fa-linkedin-in iconcolor"></i></a>
+            </div>
+            <div class="icon">
+              <a href="" class="link1 js-github" target="_blank"><i class="fab fa-github-alt iconcolor"></i></a>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
     <section class="section2">
@@ -77,7 +81,7 @@
 
           <fieldset class="design">
             <label class="design__option-label label1">
-              <input type="radio" name="palette" class="design__option-radio" value="1" checked id="blue" />
+              <input type="radio" name="palette" class="design__option-radio js-palette" value="1" checked id="blue" />
               <ul class="palette-1">
                 <li class="design__option-color color-1"></li>
                 <li class="design__option-color color-2"></li>
@@ -85,7 +89,7 @@
               </ul>
             </label>
             <label class="design__option-label label2">
-              <input type="radio" name="palette" class="design__option-radio" value="2" id="red" />
+              <input type="radio" name="palette" class="design__option-radio js-palette" value="2" id="red" />
               <ul class="palette-2">
                 <li class="design__option-color color-4"></li>
                 <li class="design__option-color color-5"></li>
@@ -93,7 +97,7 @@
               </ul>
             </label>
             <label class="design__option-label label3">
-              <input type="radio" name="palette" class="design__option-radio" value="3" id="yellow" />
+              <input type="radio" name="palette" class="design__option-radio js-palette" value="3" id="yellow" />
               <ul class="palette-3">
                 <li class="design__option-color color-7"></li>
                 <li class="design__option-color color-8"></li>
@@ -123,25 +127,22 @@
           <fieldset class="js-fill personal-data">
             <label for="name" class="label">Nombre completo</label>
             <input id="name" type="text" name="name" placeholder="Ej: Sally Jill" class="input" required />
-            <label for="position" class="label">Puesto</label>
-            <input id="position" type="text" name="position" placeholder="Ej: Front-end unicorn" class="input" required />
+            <label for="job" class="label">Puesto</label>
+            <input id="job" type="text" name="job" placeholder="Ej: Front-end unicorn" class="input" required />
             <label for="button" class="label">Imagen de perfil</label>
             <div class="inline">
-              <button id="button" class="button">
-                <a class="link" href=""></a>Añadir imagen
-              </button>
-              <div class="previous_img">
-                <img title="profile_image" src="" alt="" />
-              </div>
+              <label class="action__upload-btn button" for="img-selector">Añadir imagen</label>
+              <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn" />
+              <div class="previous_img js__profile-image js__profile-preview"></div>
             </div>
             <label for="email" class="label">Email</label>
-            <input id="email" type="email" name="email" placeholder="Ej: nombre.apellidos@mail.com" class="input" required />
-            <label for="telephone" class="label">Teléfono</label>
-            <input id="telephone" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" class="input" required />
+            <input id="email" type="email" name="email" placeholder="Ej: nombre@mail.com" class="input" required />
+            <label for="phone" class="label">Teléfono</label>
+            <input id="phone" type="tel" name="phone" placeholder="Ej: 555-55-55-55" class="input" required />
             <label for="linkedIn" class="label">LinkedIn</label>
-            <input id="linkedIn" type="text" name="linkedIn" placeholder="linkedin.com/sally.jill" class="input" required />
+            <input id="linkedin" type="text" name="linkedin" placeholder="sally.jill" class="input" required />
             <label for="github" class="label">GitHub</label>
-            <input id="github" type="text" name="github" placeholder="@sally-jill" class="input" />
+            <input id="github" type="text" name="github" placeholder="sally-jill" class="input" />
           </fieldset>
         </div>
         <!-- <div class="collapsible">
@@ -161,13 +162,20 @@
   <div class="line"></div>
 </div>
 
-        <fieldset class="js-share share_form">
-          <container class="container__share">
-            <button class="container__share--button" type="button">
-              <a class="share__button--link" title="crea tarjeta"><i class="far fa-address-card"></i>Crear Tarjeta</a>
-            </button>
-          </container>
-        </fieldset>
+        <div class="marginform">
+          <fieldset class="share_form js-share">
+            <container class="container__share">
+              <button class="container__share--button js-createcard" type="button">
+                <a class="share__button--link" title="Crear Tarjeta"><i class="far fa-address-card"></i>Crear Tarjeta</a>
+              </button>
+              <div class="twitter_button js-response hidden">
+              </div>
+              <button class="container__share--twitter js-twitter hidden" type="button">
+                <a class="share__twitter--link" title="Twitter"><i class="fab fa-twitter"></i> Compartir en Twitter</a>
+              </button>
+            </container>
+          </fieldset>
+        </div>
       </form>
 
     </section>
