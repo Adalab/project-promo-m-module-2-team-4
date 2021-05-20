@@ -2,7 +2,7 @@ function getData() {
   data = {
     name: document.querySelector("#name").value,
     job: document.querySelector("#job").value,
-    photo: photo,
+    photo: photo, 
     email: document.querySelector("#email").value,
     phone: document.querySelector("#phone").value,
     linkedin: document.querySelector("#linkedin").value,
@@ -33,8 +33,14 @@ function getLocalStorage() {
         paletteElement.checked = true;
       }
     }
-    updateAllInputs();
-    handlePalette();
-    updatePhoto();
-  }
+    handlerKey();
+    labelpalette2();
+    labelpalette1();
+    labelpalette3();
+    writeImage();
+    }
 }
+
+saveInLocal();
+getLocalStorage();
+

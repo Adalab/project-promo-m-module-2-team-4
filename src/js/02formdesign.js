@@ -69,6 +69,14 @@ function labelpalette3() {
   data.palette = "3";
 }
 
+const allRadios = document.querySelectorAll(".js-palette");
+function handlePalette() {
+  for(const radio of allRadios) {
+    allRadios.addEventListener
+  }
+}
+
+
 label2.addEventListener("change", labelpalette2);
 
 label1.addEventListener("change", labelpalette1);
