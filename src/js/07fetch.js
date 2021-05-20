@@ -57,7 +57,8 @@ function handlerClickCreate(event) {
         responseElement.classList.remove("hidden");
       });
   }
-  localStorage.setItem("data", JSON.stringify(data));
+  // localStorage.setItem("data", JSON.stringify(data));
 }
 
 createCard.addEventListener("click", handlerClickCreate);
+
