@@ -3,18 +3,6 @@
 const form = document.querySelector(".js-form");
 const reset = document.querySelector(".button_reset");
 
-const card = {
-  line: document.querySelector(".rectangle"),
-  title: document.querySelector(".name"),
-  border: document.querySelectorAll(".icon"),
-  icon: document.querySelectorAll(".iconcolor"),
-  job: document.querySelector(".job"),
-  phone: document.querySelector(".js-phone"),
-  email: document.querySelector(".js-email"),
-  linkedin: document.querySelector(".js-linkedin"),
-  github: document.querySelector(".js-github"),
-};
-
 function changeTitle(ev) {
   const inputForm = ev.target.name;
   const inputValue = ev.target.value;
@@ -22,6 +10,7 @@ function changeTitle(ev) {
 }
 
 function inputChange() {
+  console.log(data);
   card.title.innerHTML = data.name === "" ? "Nombre y Apellidos" : data.name;
   card.job.innerHTML = data.job === "" ? "Puesto" : data.job;
   card.email.href = `mailto: ${data.email}`;

@@ -13,5 +13,6 @@ function resetButton(ev) {
     card.title.innerHTML = "Mileva Marić";
     card.job.innerHTML = "Matemática";
   }
+  localStorage.removeItem("data");
 }
 resetElement.addEventListener("click", resetButton);

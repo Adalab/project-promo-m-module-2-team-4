@@ -1,9 +1,19 @@
 "use strict";
 
+let photo = "";
+
 const fr = new FileReader();
 const fileField = document.querySelector(".js__profile-upload-btn");
 const profileImage = document.querySelector(".js__profile-image");
 const profilePreview = document.querySelector(".js__profile-preview");
+
+const localImage = localStorage.getItem("photo");
+
+if (localImage) {
+  profileImage.style.backgroundImage = `url(${localImage})`;
+  profilePreview.style.backgroundImage = `url(${localImage})`;
+  data.photo = localImage;
+}
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
@@ -32,6 +42,8 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   data.photo = fr.result;
+
+  localStorage.setItem("photo", formData.photo);
 }
 
 /**

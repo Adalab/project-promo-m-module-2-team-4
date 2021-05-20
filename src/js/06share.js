@@ -39,17 +39,18 @@ function handlerClickCreate(event) {
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then((data) => {
-        if (data.success === false) {
+      .then((resultData) => {
+        if (resultData.success === false) {
           responseElement.innerHTML =
             "<p>Tienes que rellenar algunos datos.</p>";
           responseElement.classList.remove("hidden");
         } else {
           responseElement.innerHTML = `
             <h3 class="cardcreated-js">La tarjeta ha sido creada:</h3>
-            <p><a class="linkcard" target:_blank href="${data.cardURL}">${data.cardURL}</a></p>`;
+            <p><a class="linkcard" target:_blank href="${resultData.cardURL}">${resultData.cardURL}</a></p>`;
           responseElement.classList.remove("hidden");
           btnTwitter.classList.remove("hidden");
+          localStorage.setItem("data", JSON.stringify(data));
         }
       })
       .catch(() => {
@@ -57,8 +58,6 @@ function handlerClickCreate(event) {
         responseElement.classList.remove("hidden");
       });
   }
-  // localStorage.setItem("data", JSON.stringify(data));
 }
 
 createCard.addEventListener("click", handlerClickCreate);
-
