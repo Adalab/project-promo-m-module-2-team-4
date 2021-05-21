@@ -54,7 +54,7 @@ function handlerClickCreate(event) {
           btnTwitter.classList.remove("hidden");
           linkTwitter.setAttribute(
             "href",
-            `https://twitter.com/intent/tweet?text=${textCard}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoJemison,week7of12`
+            `https://twitter.com/intent/tweet?text=${textCard}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoMileva,week7of12`
           );
           localStorage.setItem("data", JSON.stringify(data));
         }

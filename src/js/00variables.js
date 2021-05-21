@@ -9,8 +9,17 @@ let data = {
   phone: "",
   linkedin: "",
   github: "",
-  palette: 1,
+  palette: "",
 };
+
+let nameInput = document.querySelector("#name");
+let jobInput = document.querySelector("#job");
+let emailInput = document.querySelector("#email");
+let phoneInput = document.querySelector("#phone");
+let linkedinInput = document.querySelector("#linkedin");
+let githubInput = document.querySelector("#github");
+
+let paletteElements = document.querySelectorAll(".js_palette");
 
 let card = {
   line: document.querySelector(".rectangle"),
@@ -27,25 +36,27 @@ let card = {
 
 const paletteData = document.querySelector(".design");
 
+function getLocalStorage() {
+  if (data != null) {
+    nameInput.value = savedData.name;
+    jobInput.value = savedData.job;
+    emailInput.value = savedData.email;
+    phoneInput.value = savedData.phone;
+    linkedinInput.value = savedData.linkedin;
+    githubInput.value = savedData.github;
+  }
+  for (const paletteElement of paletteElements) {
+    if (paletteElement.value === data.palette) {
+      paletteElement.checked = true;
+    }
+  }
+  document.querySelector(".js-palette:checked").value;
+
+  localStorageColor();
+}
+getLocalStorage();
+
 if (savedData) {
   data = savedData;
   inputChange();
 }
-
-// function getLocalStorage() {
-//   if (savedData != null) {
-//     data.name.value = savedData.name;
-//     data.job.value = savedData.job;
-//     data.job.value = savedData.job;
-//     data.email.value = savedData.email;
-//     data.phone.value = savedData.phone;
-//     data.linkedin.value = savedData.linkedin;
-//     data.github.value = savedData.github;
-//     paletteData.value = savedData.palette;
-//     // guardo en el objeto data y repinto
-//   }
-//   // previewCard();
-//   // previewImage();
-//   // previewPalette();
-// }
-// getLocalStorage();
