@@ -3,6 +3,8 @@
 const form = document.querySelector(".js-form");
 const reset = document.querySelector(".button_reset");
 
+const iconColor = document.querySelector(".iconcolor-opacity");
+
 function changeTitle(ev) {
   const inputForm = ev.target.name;
   const inputValue = ev.target.value;
@@ -13,6 +15,7 @@ function inputChange() {
   console.log(data);
   card.title.innerHTML = data.name === "" ? "Nombre y Apellidos" : data.name;
   card.job.innerHTML = data.job === "" ? "Puesto" : data.job;
+
   card.email.href = `mailto: ${data.email}`;
   card.phone.href = `tel: ${data.phone}`;
   card.linkedin.href =

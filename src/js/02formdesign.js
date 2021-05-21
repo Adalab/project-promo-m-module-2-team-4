@@ -4,9 +4,9 @@ const palette1 = document.querySelector(".palette-1");
 const palette2 = document.querySelector(".palette-2");
 const palette3 = document.querySelector(".palette-3");
 
-const label1 = document.querySelector(".label1");
-const label2 = document.querySelector(".label2");
-const label3 = document.querySelector(".label3");
+const label1 = document.querySelector(".label1 input");
+const label2 = document.querySelector(".label2 input");
+const label3 = document.querySelector(".label3 input");
 
 function labelpalette1() {
   //line
