@@ -1,6 +1,7 @@
 const createCard = document.querySelector(".js-createcard");
 const responseElement = document.querySelector(".js-response");
 const btnTwitter = document.querySelector(".js-twitter");
+const linkTwitter = document.querySelector(".js-linkTwitter");
 
 function handlerClickCreate(event) {
   event.preventDefault();
@@ -45,14 +46,15 @@ function handlerClickCreate(event) {
             "<p>Tienes que rellenar algunos datos.</p>";
           responseElement.classList.remove("hidden");
         } else {
+          const textCard = "Echa un vistazo a mi tarjeta de visita 🌱 ";
           responseElement.innerHTML = `
             <h3 class="cardcreated-js">La tarjeta ha sido creada:</h3>
             <p><a class="linkcard" target:_blank href="${resultData.cardURL}">${resultData.cardURL}</a></p>`;
           responseElement.classList.remove("hidden");
           btnTwitter.classList.remove("hidden");
-          btnTwitter.setAttribute(
+          linkTwitter.setAttribute(
             "href",
-            `https://twitter.com/intent/tweet?text=${responseElement}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoJemison,week7of12`
+            `https://twitter.com/intent/tweet?text=${textCard}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoJemison,week7of12`
           );
           localStorage.setItem("data", JSON.stringify(data));
         }
