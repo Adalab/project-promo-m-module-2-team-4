@@ -34,7 +34,7 @@ let card = {
   image: document.querySelector(".js__profile-preview"),
 };
 
-const paletteData = document.querySelector(".design");
+// const paletteData = document.querySelector(".design");
 
 function getLocalStorage() {
   if (data != null) {
@@ -45,12 +45,12 @@ function getLocalStorage() {
     linkedinInput.value = savedData.linkedin;
     githubInput.value = savedData.github;
   }
-  for (const paletteElement of paletteElements) {
-    if (paletteElement.value === data.palette) {
-      paletteElement.checked = true;
-    }
-  }
-  document.querySelector(".js-palette:checked").value;
+  // for (const paletteElement of paletteElements) {
+  //   if (paletteElement.value === data.palette) {
+  //     paletteElement.checked = true;
+  //   }
+  // }
+  // document.querySelector(".js-palette:checked").value;
 
   localStorageColor();
 }
