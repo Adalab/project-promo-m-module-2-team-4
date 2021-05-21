@@ -1,5 +1,5 @@
 "use strict";
-const savedData = JSON.parse(localStorage.getItem("data"));
+const getlocalData = JSON.parse(localStorage.getItem("data"));
 
 let data = {
   name: "",
