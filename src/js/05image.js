@@ -43,7 +43,7 @@ function writeImage() {
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   data.photo = fr.result;
 
-  localStorage.setItem("photo", formData.photo);
+  localStorage.setItem("photo", data.photo);
 }
 
 /**

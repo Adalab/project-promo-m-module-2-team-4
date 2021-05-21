@@ -50,6 +50,10 @@ function handlerClickCreate(event) {
             <p><a class="linkcard" target:_blank href="${resultData.cardURL}">${resultData.cardURL}</a></p>`;
           responseElement.classList.remove("hidden");
           btnTwitter.classList.remove("hidden");
+          btnTwitter.setAttribute(
+            "href",
+            `https://twitter.com/intent/tweet?text=${responseElement}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoJemison,week7of12`
+          );
           localStorage.setItem("data", JSON.stringify(data));
         }
       })

@@ -25,7 +25,27 @@ let card = {
   image: document.querySelector(".js__profile-preview"),
 };
 
+const paletteData = document.querySelector(".design");
+
 if (savedData) {
   data = savedData;
   inputChange();
 }
+
+// function getLocalStorage() {
+//   if (savedData != null) {
+//     data.name.value = savedData.name;
+//     data.job.value = savedData.job;
+//     data.job.value = savedData.job;
+//     data.email.value = savedData.email;
+//     data.phone.value = savedData.phone;
+//     data.linkedin.value = savedData.linkedin;
+//     data.github.value = savedData.github;
+//     paletteData.value = savedData.palette;
+//     // guardo en el objeto data y repinto
+//   }
+//   // previewCard();
+//   // previewImage();
+//   // previewPalette();
+// }
+// getLocalStorage();
