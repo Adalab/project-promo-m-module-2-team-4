@@ -46,3 +46,17 @@
 .action__hiddenField {
   display: none;
 }
+.js-border-input {
+  border: rem(1) solid red;
+}
+.js-error-message {
+  color: red;
+  display: none;
+  padding-bottom: rem(11);
+}
+
+.js-error {
+  .js-error-message {
+    display: block;
+  }
+}
