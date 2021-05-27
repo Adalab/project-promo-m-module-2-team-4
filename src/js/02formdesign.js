@@ -27,7 +27,7 @@ function labelpalette1() {
   );
 
   data.palette = "1";
-  localStorage.setItem("color", JSON.stringify(data.palette));
+  //localStorage.setItem("color", JSON.stringify(data.palette));
 }
 function labelpalette2() {
   //line
@@ -48,7 +48,7 @@ function labelpalette2() {
   );
 
   data.palette = "2";
-  localStorage.setItem("color", JSON.stringify(data.palette));
+  //localStorage.setItem("color", JSON.stringify(data.palette));
 }
 function labelpalette3() {
   //line
@@ -69,7 +69,7 @@ function labelpalette3() {
   );
 
   data.palette = "3";
-  localStorage.setItem("color", JSON.stringify(data.palette));
+  //localStorage.setItem("color", JSON.stringify(data.palette));
 }
 
 label2.addEventListener("change", labelpalette2);
@@ -78,26 +78,26 @@ label1.addEventListener("change", labelpalette1);
 
 label3.addEventListener("change", labelpalette3);
 
-const getFromLocalStorage = () => {
-  const userColorRaw = localStorage.getItem("color");
-  const storedColor = JSON.parse(userColorRaw);
-  if (storedColor !== null) {
-    localStorageColor(storedColor);
-  }
-};
+// const getFromLocalStorage = () => {
+//   const userColorRaw = localStorage.getItem("color");
+//   const storedColor = JSON.parse(userColorRaw);
+//   if (storedColor !== null) {
+//     localStorageColor(storedColor);
+//   }
+// };
 
-getFromLocalStorage();
+//getFromLocalStorage();
 
-function localStorageColor(color) {
-  if (color === "1") {
+function localStorageColor(palette) {
+  if (palette === "1") {
     labelpalette1();
     label1.setAttribute("checked", "");
   }
-  if (color === "2") {
+  if (palette === "2") {
     labelpalette2();
     label2.setAttribute("checked", "");
   }
-  if (color === "3") {
+  if (palette === "3") {
     labelpalette3();
     label3.setAttribute("checked", "");
   }

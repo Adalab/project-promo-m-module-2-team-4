@@ -59,4 +59,5 @@ if (localStorage.getItem("data") !== null) {
 if (savedData) {
   data = savedData;
   inputChange();
+  localStorageColor(savedData);
 }
