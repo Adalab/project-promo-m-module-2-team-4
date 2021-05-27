@@ -12,7 +12,25 @@ function resetButton(ev) {
     data.palette = "1";
     card.title.innerHTML = "Mileva Marić";
     card.job.innerHTML = "Matemática";
+    card.phone.href = "";
+    card.email.href = "";
+    card.linkedin.href = "";
+    card.github.href = "";
+    if (data.phone !== "") {
+      icon1.classList.add("opacity");
+    }
+    if (data.email !== "") {
+      icon2.classList.add("opacity");
+    }
+    if (data.linkedin !== "") {
+      icon3.classList.add("opacity");
+    }
+    if (data.github !== "") {
+      icon4.classList.add("opacity");
+    }
   }
-  localStorage.removeItem("data");
+
+  localStorage.clear();
 }
+
 resetElement.addEventListener("click", resetButton);

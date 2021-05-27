@@ -12,6 +12,11 @@ let data = {
   palette: "",
 };
 
+const icon1 = document.querySelector(".js-icon1");
+const icon2 = document.querySelector(".js-icon2");
+const icon3 = document.querySelector(".js-icon3");
+const icon4 = document.querySelector(".js-icon4");
+
 let nameInput = document.querySelector("#name");
 let jobInput = document.querySelector("#job");
 let emailInput = document.querySelector("#email");

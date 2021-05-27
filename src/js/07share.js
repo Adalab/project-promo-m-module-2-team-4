@@ -56,6 +56,8 @@ function handlerClickCreate(event) {
             "href",
             `https://twitter.com/intent/tweet?text=${textCard}&url=${resultData.cardURL}&hashtags=Adalabers,JavaScript,PromoMileva,week7of12`
           );
+          createCard.setAttribute("disabled", true);
+          createCard.style.opacity = "0.5";
           localStorage.setItem("data", JSON.stringify(data));
         }
       })
