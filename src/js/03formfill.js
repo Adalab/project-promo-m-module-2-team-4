@@ -40,3 +40,14 @@ function handlerKey(ev) {
 }
 
 form.addEventListener("keyup", handlerKey);
+
+function validateEmail(email) {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validatePhone(phone) {
+  const ph = /^([9,8,7,6]{1})+([0-9]{8})$/;
+  return ph.test(phone);
+}

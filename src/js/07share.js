@@ -18,8 +18,14 @@ function handlerClickCreate(event) {
   } else if (data.email === "") {
     responseElement.innerHTML = "Oops! Tienes que rellenar tu email!";
     responseElement.classList.remove("hidden");
+  } else if (!validateEmail(data.email)) {
+    responseElement.innerHTML = "Oops! no has puesto bien el email =(";
+    responseElement.classList.remove("hidden");
   } else if (data.phone === "") {
     responseElement.innerHTML = "Oops! Tienes que rellenar tu teléfono!";
+    responseElement.classList.remove("hidden");
+  } else if (!validatePhone(data.phone)) {
+    responseElement.innerHTML = "Oops! no has puesto bien el número =(";
     responseElement.classList.remove("hidden");
   } else if (data.linkedin === "") {
     responseElement.innerHTML =
