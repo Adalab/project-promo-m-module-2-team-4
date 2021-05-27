@@ -24,16 +24,16 @@ function resetButton(ev) {
     card.linkedin.href = "";
     card.github.href = "";
 
-    if (data.phone !== "") {
+    if (data.phone === "") {
       icon1.classList.add("opacity");
     }
-    if (data.email !== "") {
+    if (data.email === "") {
       icon2.classList.add("opacity");
     }
-    if (data.linkedin !== "") {
+    if (data.linkedin === "") {
       icon3.classList.add("opacity");
     }
-    if (data.github !== "") {
+    if (data.github === "") {
       icon4.classList.add("opacity");
     }
   }

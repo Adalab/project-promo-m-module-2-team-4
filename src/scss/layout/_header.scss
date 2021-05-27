@@ -3,12 +3,14 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 30px 79px 30px 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   @media all and (min-width: 768px) {
     justify-content: flex-start;
+    padding-left: 60px;
   }
 }
 
 .header__image {
-  width: 210px;
+  width: 160px;
 }
