@@ -40,8 +40,3 @@ function handlerKey(ev) {
 }
 
 form.addEventListener("keyup", handlerKey);
-
-// data.mail === ""
-//       ? icon1.classList.remove("opacity")
-//       : `mailto: ${data.email}`),
-//     icon1.classList.add("opacity");
