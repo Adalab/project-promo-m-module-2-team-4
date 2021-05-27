@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $colorTitle;
+  background-color: $colorSecundary;
   color: white;
   width: 140px;
   height: 30px;
@@ -26,7 +26,8 @@
   height: 30px;
   padding-left: 9px;
   margin-bottom: 12px;
-  border: solid $colorpalette3 1px;
+  border: solid $colorSecundary 1px;
+  border-radius: 5px;
   &::placeholder {
     color: #c5c5c5;
   }

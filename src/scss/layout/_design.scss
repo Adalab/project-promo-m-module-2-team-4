@@ -1,24 +1,3 @@
-// .design-section {
-//   width: 320px;
-//   height: 340px;
-//   padding: 27px 20px 31px;
-// }
-// .design {
-//   display: flex;
-//   margin-bottom: 25px;
-// }
-// .design-text {
-//   margin-left: 10px;
-//   font-size: 18px;
-//   text-transform: uppercase;
-//   font-family: $fontText;
-// }
-// .icon-design {
-//   color: #e17334;
-//   font-size: 22px;
-//   padding-bottom: 5px;
-// }
-
 .colortext {
   text-transform: uppercase;
   font-family: $fontText;
@@ -29,6 +8,7 @@
 //paleta de colores
 .design {
   margin-top: 6px;
+  position: relative;
 
   &__option-label {
     display: flex;
