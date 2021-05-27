@@ -10,12 +10,20 @@ function resetButton(ev) {
     labelpalette1();
     paletteDefault.checked = true;
     data.palette = "1";
+    data.name = "";
+    data.job = "";
+    data.email = "";
+    data.phone = "";
+    data.linkedin = "";
+    data.github = "";
+
     card.title.innerHTML = "Mileva Marić";
     card.job.innerHTML = "Matemática";
     card.phone.href = "";
     card.email.href = "";
     card.linkedin.href = "";
     card.github.href = "";
+
     if (data.phone !== "") {
       icon1.classList.add("opacity");
     }

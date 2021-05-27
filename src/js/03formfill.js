@@ -12,17 +12,12 @@ function changeTitle(ev) {
 }
 
 function inputChange() {
-  console.log(data);
   card.title.innerHTML = data.name === "" ? "Nombre y Apellidos" : data.name;
   card.job.innerHTML = data.job === "" ? "Puesto" : data.job;
 
   card.email.href = `mailto: ${data.email}`;
   card.phone.href = `tel: ${data.phone}`;
-  card.linkedin.href =
-    data.linkedin.href === ""
-      ? data.linkedin.setAttribute("disabled", true)
-      : `https://linkedin.com/in/${data.linkedin}`;
-
+  card.linkedin.href = `https://linkedin.com/in/${data.linkedin}`;
   card.github.href = `https://github.com/${data.github}`;
 
   if (data.phone !== "") {
